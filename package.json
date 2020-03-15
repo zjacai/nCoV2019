@@ -1,0 +1,28 @@
+{
+  "name": "wechaty-puppet-nCoV2019",
+  "version": "0.0.1",
+  "description": "This is acai's first Wechaty Puppet",
+  "engines": {
+    "wechaty": ">=0.16.x"
+  },
+  "wechaty": {
+    "properties": {
+      "myConfigKey": {
+        "type": "string",
+        "default": "it's the default value",
+        "description": "It defines my awesome config!"
+      }
+    }
+  },
+  "main": "pidan.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0",
+    "request-promise": "^4.2.5",
+    "wechaty": "^0.32.5"
+  }
+}
