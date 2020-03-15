@@ -75,22 +75,14 @@ bot
 		  
 		// 3. send Contact
 		  if (/^baicai$/i.test(msg.text())) {
-		    const contactCard = await bot.Contact.find({name: '空心菜卖白菜'})
+		    const contactCard = await bot.Contact.find({name: '卖白菜'})
 		    if (!contactCard) {
 		      console.log('not found')
 		      return
 		    }
 		    await msg.say(contactCard)
 		  }
-		  if (/^rong$/i.test(msg.text())) {
-		    const contactCard = await bot.Contact.find({name: 'rong2010'})
-		    if (!contactCard) {
-		      console.log('not found')
-		      return
-		    }
-		    await msg.say(contactCard)
-		  }
-		// 4. send UrlLink
+
 		  if (/^link$/i.test(msg.text())) { 
 		    const urlLink = new bot.UrlLink({
 		      description: 'Wechaty is a Bot SDK for Wechat Individual Account which can help you create a bot in 6 lines of javascript, with cross-platform support including Linux, Windows, Darwin(OSX/Mac) and Docker.',
