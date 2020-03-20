@@ -5,7 +5,7 @@ const {
   log,
 }               = require('wechaty')
 
-const WECHATY_PUPPET_PADCHAT_TOKEN = 'test'
+const WECHATY_PUPPET_PADCHAT_TOKEN = 'YOUR_TOKEN'
  
 const puppet = 'wechaty-puppet-padplus' // 使用ipad 的方式接入。
  
